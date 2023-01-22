@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
+                        <!-- WELCOME -->
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-8 text-center">
+
+				<!-- Heading -->
+				<h1 class="display-2 text-black">
+					<u>Mes points forts :</u>
+				</h1>
+
+				<!-- Button -->
+				<a href="/portfolio" class="btn btn-primary lift">
+					Revenir à mon Portfolio
+					<i class="fe fe-arrow-right ms-3"></i>
+				</a>
+
+			</div>
+		</div>
+				</h1>
+                    <div class="col-lg-4">
+                        <img loading="lazy" width="1300" src="{{ asset('https://media.discordapp.net/attachments/968955109155418132/1066396571698212915/image.png?width=1029&height=639') }}" />
+                    </div>
+
+						<!-- Meta -->
+						<a class="card-meta" href="">
+
+							<!-- Divider -->
+							<hr class="card-meta-divider">
+
+						</a>
+
+					
+
+				</div>
+					</div>
+		<!-- / .row -->
+        
+	</div>
+	<!-- / .container -->
+</section>
+        <!-- SHAPE -->
+<div class="position-relative">
+	<div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+		<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+	</div>
+</div>
+
+</body>
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('home') }}
+{% endblock %}
