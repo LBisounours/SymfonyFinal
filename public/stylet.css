@@ -1,0 +1,63 @@
+:root {
+    --main-bg-color: #141414;
+    --text-color: #fff;
+    --primary-color: #4caf50;
+    --secondary-bg-color: #333;
+    --hover-color: #555;
+    --border-color: #555;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding-top: 0; /* Espacement en haut réglé à 0 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1em;
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main-content {
+    z-index: 10;
+    position: relative;
+}
+
+footer {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* ... Insérez ici vos autres styles .popover, .octicon, .table, etc... */
+
+@media (max-width: 768px) {
+    .article {
+        width: calc(100% - 20px);
+    }
+
+    .article-container {
+        gap: 10px;
+    }
+}
