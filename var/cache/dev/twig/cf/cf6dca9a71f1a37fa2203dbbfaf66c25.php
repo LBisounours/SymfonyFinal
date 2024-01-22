@@ -86,120 +86,86 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<body data-aos-easing=\"ease-out-quad\" data-aos-duration=\"700\" data-aos-delay=\"0\">
-            <!-- WELCOME -->
-\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-
-\t\t\t\t<!-- Heading -->
-\t\t\t\t<h1 class=\"display-2 text-black\">
-\t\t\t\t\t<u>Mon CV :</u>
-\t\t\t\t</h1>
-
-\t\t\t</div>
-\t\t</div>
-\t\t<!-- / .row -->
-\t</div>
-
-\t\t<!-- Heading -->
-\t\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-\t\t\t\t<h2>
-\t\t\t\t\tJobs de mes rêves :
-\t\t<!-- Text -->
-\t\t\t\t<p class=\"lead text-white-75 mb-6\">
-\t\t\t\t\tDéveloppeur dans le monde du jeux vidéo.
-\t\t\t\t</p>
-\t\t\t\t</h2>
-</div>
-    <section>
-\t<h4><h4>
-\t<div class=\"contener\"> 
-\t    <div class=\"contener\"> 
- 
-        <h3>Competences<h3>
-        
-        <p>
-\t\t- Gestion/Création d'un réseaux.<br> 
-\t\t- Programmations en C, Python et Javascript.<br> 
-\t\t- Création de site web.<br> 
-\t\t- Gestion d’un réseaux.<br> 
-\t\t- Accueils des clients.<br> 
-\t\t- Parle anglais couramment.<br>
-\t\t- Travaille en équipe.<br> 
-\t\t</p>
- 
-    </div>
-
-        <div class=\"contener\"> 
-            <h3> Formations <h3>
-
-            <p>Actuellement : BUT Réseaux et Télécommunication, IUT de Roanne.<br> 
-            2021-2022 : Bac STAV, Lycée Agricole de Roanne-Chervé.<br> 
-\t\t\t2018-2019 : Brevet des collèges mention assez bien.</p>
+        echo "<div class=\"container\">
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+            <h1 class=\"display-2 text-black\"><u>Mon CV :</u></h1>
         </div>
-
-    <div class=\"contener\">
-
-        <h3>Experience professionnel </h3>
-        <p>- Exploitant agricole stagiaire, stage dans une ferme en production agricole.<br> 
-\t\t- Stage vétérinaire.<br></p>
-\t\t
     </div>
 
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+            <h2>Jobs de mes rêves :</h2>
+            <p class=\"lead text-white-75 mb-6\">Développeur dans le monde du jeux vidéo.</p>
+        </div>
+    </div>
+
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8\">
+            <h3>Compétences</h3>        
+            <p>
+                - Gestion/Création d'un réseau<br> 
+                - Programmations en C, Python et Javascript<br> 
+                - Création de site web<br> 
+                - Accueil des clients<br> 
+                - Parle anglais couramment<br>
+                - Travail en équipe<br> 
+            </p>
+
+            <h3>Formations</h3>
+            <p>
+                Actuellement : BUT Réseaux et Télécommunication, IUT de Roanne<br> 
+                2021-2022 : Bac STAV, Lycée Agricole de Roanne-Chervé<br> 
+                2018-2019 : Brevet des collèges mention assez bien
+            </p>
+
+            <h3>Expérience professionnelle</h3>
+            <p>
+                - Exploitant agricole stagiaire, stage dans une ferme en production agricole<br> 
+                - Stage vétérinaire<br>
+            </p>
+        </div>
+    </div>
+
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8\">
+            <form id=\"fakeForm\">
+                <div class=\"form-group\">
+                    <label for=\"email\">Email:</label>
+                    <input type=\"email\" id=\"email\" name=\"email\" required>
+                </div>
+                <div class=\"form-group\">
+                    <label for=\"password\">Mot de passe:</label>
+                    <input type=\"password\" id=\"password\" name=\"password\" required>
+                </div>
+                <button type=\"button\" onclick=\"downloadPDF()\">Télécharger</button>
+            </form>
+        </div>
+    </div>
+
+    <div class=\"row justify-content-center mt-4\">
+        <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+            <a href=\"/portfolio\" class=\"btn btn-primary lift\">Retourner au Portfolio<i class=\"fe fe-arrow-right ms-3\"></i></a>
+            <a href=\"/contact\" class=\"btn btn-primary lift\">Comment Me Contacter ?<i class=\"fe fe-arrow-right ms-3\"></i></a>
+        </div>
+    </div>
 </div>
-    </section>
-<style> 
-.cas{
-width: 7px;
-margin: auto;
-font-family: 'calibri',sans-serif;
-font-size: 2px;
-border: 4px solid black;
-border-radius: 1px;
-padding:24px;
-}
-.contener{
-    margin-buttom: 1px;
-    text-align: center;
-}
- 
- h4 , h3 {
-    font-size: 25px;
-    border-bottom: 4px solid skyblue;
- }
-body{
-background-repeat: no-repeat;
-background-size: 10vw 10vh;
-} 
-</style>
-\t</div>
-\t<!-- / .container -->
-</section>
 
-
-
-<!-- Meta -->
-\t\t\t\t\t\t<a class=\"card-meta\" href=\"/actualites/lancement-du-site-internet\">
-
-\t\t\t\t\t\t\t<!-- Divider -->
-\t\t\t\t\t\t\t<hr class=\"card-meta-divider\">
-
-\t\t\t\t\t\t</a>
-
-\t\t\t\t\t</div>
-
-\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t<!-- / .row -->
-        <!-- SHAPE -->
-<div class=\"position-relative\">
-\t<div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
-\t\t<svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path></svg>
-\t</div>
-</body>
+<script>
+    function downloadPDF() {
+        var isValidForm = document.getElementById('email').value.includes('@');
+        if (isValidForm) {
+            var link = document.createElement('a');
+            link.href = '/template/cv/CV Killian Loiset.pdf';
+            link.download = 'Cv Killian Loiset.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            alert('Veuillez entrer une adresse email valide.');
+        }
+    }
+</script>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -209,7 +175,7 @@ background-size: 10vw 10vh;
 
     }
 
-    // line 122
+    // line 88
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -219,11 +185,6 @@ background-size: 10vw 10vh;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 123
-        echo "    ";
-        echo twig_escape_filter($this->env, $this->env->getFunction('encore_entry_script_tags')->getCallable()("home"), "html", null, true);
-        echo "
-";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -244,7 +205,7 @@ background-size: 10vw 10vh;
 
     public function getDebugInfo()
     {
-        return array (  223 => 123,  213 => 122,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  179 => 88,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -254,125 +215,89 @@ background-size: 10vw 10vh;
 {% block title %}Mon CV !{% endblock %}
 
 {% block body %}
-<body data-aos-easing=\"ease-out-quad\" data-aos-duration=\"700\" data-aos-delay=\"0\">
-            <!-- WELCOME -->
-\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-
-\t\t\t\t<!-- Heading -->
-\t\t\t\t<h1 class=\"display-2 text-black\">
-\t\t\t\t\t<u>Mon CV :</u>
-\t\t\t\t</h1>
-
-\t\t\t</div>
-\t\t</div>
-\t\t<!-- / .row -->
-\t</div>
-
-\t\t<!-- Heading -->
-\t\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-\t\t\t\t<h2>
-\t\t\t\t\tJobs de mes rêves :
-\t\t<!-- Text -->
-\t\t\t\t<p class=\"lead text-white-75 mb-6\">
-\t\t\t\t\tDéveloppeur dans le monde du jeux vidéo.
-\t\t\t\t</p>
-\t\t\t\t</h2>
-</div>
-    <section>
-\t<h4><h4>
-\t<div class=\"contener\"> 
-\t    <div class=\"contener\"> 
- 
-        <h3>Competences<h3>
-        
-        <p>
-\t\t- Gestion/Création d'un réseaux.<br> 
-\t\t- Programmations en C, Python et Javascript.<br> 
-\t\t- Création de site web.<br> 
-\t\t- Gestion d’un réseaux.<br> 
-\t\t- Accueils des clients.<br> 
-\t\t- Parle anglais couramment.<br>
-\t\t- Travaille en équipe.<br> 
-\t\t</p>
- 
-    </div>
-
-        <div class=\"contener\"> 
-            <h3> Formations <h3>
-
-            <p>Actuellement : BUT Réseaux et Télécommunication, IUT de Roanne.<br> 
-            2021-2022 : Bac STAV, Lycée Agricole de Roanne-Chervé.<br> 
-\t\t\t2018-2019 : Brevet des collèges mention assez bien.</p>
+<div class=\"container\">
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+            <h1 class=\"display-2 text-black\"><u>Mon CV :</u></h1>
         </div>
-
-    <div class=\"contener\">
-
-        <h3>Experience professionnel </h3>
-        <p>- Exploitant agricole stagiaire, stage dans une ferme en production agricole.<br> 
-\t\t- Stage vétérinaire.<br></p>
-\t\t
     </div>
 
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+            <h2>Jobs de mes rêves :</h2>
+            <p class=\"lead text-white-75 mb-6\">Développeur dans le monde du jeux vidéo.</p>
+        </div>
+    </div>
+
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8\">
+            <h3>Compétences</h3>        
+            <p>
+                - Gestion/Création d'un réseau<br> 
+                - Programmations en C, Python et Javascript<br> 
+                - Création de site web<br> 
+                - Accueil des clients<br> 
+                - Parle anglais couramment<br>
+                - Travail en équipe<br> 
+            </p>
+
+            <h3>Formations</h3>
+            <p>
+                Actuellement : BUT Réseaux et Télécommunication, IUT de Roanne<br> 
+                2021-2022 : Bac STAV, Lycée Agricole de Roanne-Chervé<br> 
+                2018-2019 : Brevet des collèges mention assez bien
+            </p>
+
+            <h3>Expérience professionnelle</h3>
+            <p>
+                - Exploitant agricole stagiaire, stage dans une ferme en production agricole<br> 
+                - Stage vétérinaire<br>
+            </p>
+        </div>
+    </div>
+
+    <div class=\"row justify-content-center\">
+        <div class=\"col-12 col-md-10 col-lg-8\">
+            <form id=\"fakeForm\">
+                <div class=\"form-group\">
+                    <label for=\"email\">Email:</label>
+                    <input type=\"email\" id=\"email\" name=\"email\" required>
+                </div>
+                <div class=\"form-group\">
+                    <label for=\"password\">Mot de passe:</label>
+                    <input type=\"password\" id=\"password\" name=\"password\" required>
+                </div>
+                <button type=\"button\" onclick=\"downloadPDF()\">Télécharger</button>
+            </form>
+        </div>
+    </div>
+
+    <div class=\"row justify-content-center mt-4\">
+        <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+            <a href=\"/portfolio\" class=\"btn btn-primary lift\">Retourner au Portfolio<i class=\"fe fe-arrow-right ms-3\"></i></a>
+            <a href=\"/contact\" class=\"btn btn-primary lift\">Comment Me Contacter ?<i class=\"fe fe-arrow-right ms-3\"></i></a>
+        </div>
+    </div>
 </div>
-    </section>
-<style> 
-.cas{
-width: 7px;
-margin: auto;
-font-family: 'calibri',sans-serif;
-font-size: 2px;
-border: 4px solid black;
-border-radius: 1px;
-padding:24px;
-}
-.contener{
-    margin-buttom: 1px;
-    text-align: center;
-}
- 
- h4 , h3 {
-    font-size: 25px;
-    border-bottom: 4px solid skyblue;
- }
-body{
-background-repeat: no-repeat;
-background-size: 10vw 10vh;
-} 
-</style>
-\t</div>
-\t<!-- / .container -->
-</section>
 
-
-
-<!-- Meta -->
-\t\t\t\t\t\t<a class=\"card-meta\" href=\"/actualites/lancement-du-site-internet\">
-
-\t\t\t\t\t\t\t<!-- Divider -->
-\t\t\t\t\t\t\t<hr class=\"card-meta-divider\">
-
-\t\t\t\t\t\t</a>
-
-\t\t\t\t\t</div>
-
-\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t<!-- / .row -->
-        <!-- SHAPE -->
-<div class=\"position-relative\">
-\t<div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
-\t\t<svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path></svg>
-\t</div>
-</body>
+<script>
+    function downloadPDF() {
+        var isValidForm = document.getElementById('email').value.includes('@');
+        if (isValidForm) {
+            var link = document.createElement('a');
+            link.href = '/template/cv/CV Killian Loiset.pdf';
+            link.download = 'Cv Killian Loiset.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            alert('Veuillez entrer une adresse email valide.');
+        }
+    }
+</script>
 {% endblock %}
 
 {% block javascripts %}
-    {{ encore_entry_script_tags('home') }}
-{% endblock %}
-", "cv/index.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\cv\\index.html.twig");
+{% endblock %}", "cv/index.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\cv\\index.html.twig");
     }
 }

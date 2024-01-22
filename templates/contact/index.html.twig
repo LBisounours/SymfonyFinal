@@ -1,90 +1,65 @@
 {% extends 'base.html.twig' %}
-
 {% block title %}Me contacter !{% endblock %}
-
 {% block body %}
 <body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
-            <!-- WELCOME -->
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-10 col-lg-8 text-center">
-
-				<!-- Heading -->
 				<h1 class="display-2 text-black">
 					Me contacter :
 				</h1>
 			</div>
 		</div>
-		<!-- / .row -->
 	</div>
-	<!-- / .container -->
-
-		<!-- / .row -->
 	</div>
-	<!-- / .container -->
 </section>
-    <!-- ARTICLES -->
 <section class="pb-8 pt-7 pb-md-11 pt-md-10">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-
-				<!-- Heading -->
 				<h2 class="mb-1">
 					Mon numéro de téléphone :
 				</h2>
-
-				<!-- Text -->
 				<p class="mb-5 text-muted">
 					06-15-07-25-55
 				</p>
                 <h2 class="mb-2">
 					Mon adresse mail :
 				</h2>
-
-				<!-- Text -->
 				<p class="mb-5 text-muted">
 					loiset.killian@gmail.com
 
 				<h2 class="mb-0">
 					ㅤ
 				</h2>
-                <!-- Text -->
 				<p class="mb-5 text-muted">
 					 ㅤ
 				</p>
 
 			</div>
 		</div>
-
-
-						<!-- Meta -->
 						<a class="card-meta" href="/actualites/lancement-du-site-internet">
-
-							<!-- Divider -->
 							<hr class="card-meta-divider">
-
 						</a>
-
 					</div>
-
 				</div>
 					</div>
-		<!-- / .row -->
-        
 	</div>
-	<!-- / .container -->
+	<a href="/cv" class="btn btn-primary lift">
+					Retourner au CV
+					<i class="fe fe-arrow-right ms-3"></i>
+				</a>
+					<a href="/" class="btn btn-primary lift">
+					Retourner à l'acceuil
+					<i class="fe fe-arrow-right ms-3"></i>
+				</a>
 </section>
-        <!-- SHAPE -->
 <div class="position-relative">
 	<div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
 		<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
 	</div>
 </div>
-
 </body>
 {% endblock %}
-
 {% block javascripts %}
-    {{ encore_entry_script_tags('home') }}
 {% endblock %}

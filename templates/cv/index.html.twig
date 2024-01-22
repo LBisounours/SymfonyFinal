@@ -3,122 +3,87 @@
 {% block title %}Mon CV !{% endblock %}
 
 {% block body %}
-<body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
-            <!-- WELCOME -->
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-10 col-lg-8 text-center">
-
-				<!-- Heading -->
-				<h1 class="display-2 text-black">
-					<u>Mon CV :</u>
-				</h1>
-
-			</div>
-		</div>
-		<!-- / .row -->
-	</div>
-
-		<!-- Heading -->
-		<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-10 col-lg-8 text-center">
-				<h2>
-					Jobs de mes rêves :
-		<!-- Text -->
-				<p class="lead text-white-75 mb-6">
-					Développeur dans le monde du jeux vidéo.
-				</p>
-				</h2>
-</div>
-    <section>
-	<h4><h4>
-	<div class="contener"> 
-	    <div class="contener"> 
- 
-        <h3>Competences<h3>
-        
-        <p>
-		- Gestion/Création d'un réseaux.<br> 
-		- Programmations en C, Python et Javascript.<br> 
-		- Création de site web.<br> 
-		- Gestion d’un réseaux.<br> 
-		- Accueils des clients.<br> 
-		- Parle anglais couramment.<br>
-		- Travaille en équipe.<br> 
-		</p>
- 
-    </div>
-
-        <div class="contener"> 
-            <h3> Formations <h3>
-
-            <p>Actuellement : BUT Réseaux et Télécommunication, IUT de Roanne.<br> 
-            2021-2022 : Bac STAV, Lycée Agricole de Roanne-Chervé.<br> 
-			2018-2019 : Brevet des collèges mention assez bien.</p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+            <h1 class="display-2 text-black"><u>Mon CV :</u></h1>
         </div>
-
-    <div class="contener">
-
-        <h3>Experience professionnel </h3>
-        <p>- Exploitant agricole stagiaire, stage dans une ferme en production agricole.<br> 
-		- Stage vétérinaire.<br></p>
-		
     </div>
 
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+            <h2>Jobs de mes rêves :</h2>
+            <p class="lead text-white-75 mb-6">Développeur dans le monde du jeux vidéo.</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <h3>Compétences</h3>        
+            <p>
+                - Gestion/Création d'un réseau<br> 
+                - Programmations en C, Python et Javascript<br> 
+                - Création de site web<br> 
+                - Accueil des clients<br> 
+                - Parle anglais couramment<br>
+                - Travail en équipe<br> 
+            </p>
+
+            <h3>Formations</h3>
+            <p>
+                Actuellement : BUT Réseaux et Télécommunication, IUT de Roanne<br> 
+                2021-2022 : Bac STAV, Lycée Agricole de Roanne-Chervé<br> 
+                2018-2019 : Brevet des collèges mention assez bien
+            </p>
+
+            <h3>Expérience professionnelle</h3>
+            <p>
+                - Exploitant agricole stagiaire, stage dans une ferme en production agricole<br> 
+                - Stage vétérinaire<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <form id="fakeForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="button" onclick="downloadPDF()">Télécharger</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+            <a href="/portfolio" class="btn btn-primary lift">Retourner au Portfolio<i class="fe fe-arrow-right ms-3"></i></a>
+            <a href="/contact" class="btn btn-primary lift">Comment Me Contacter ?<i class="fe fe-arrow-right ms-3"></i></a>
+        </div>
+    </div>
 </div>
-    </section>
-<style> 
-.cas{
-width: 7px;
-margin: auto;
-font-family: 'calibri',sans-serif;
-font-size: 2px;
-border: 4px solid black;
-border-radius: 1px;
-padding:24px;
-}
-.contener{
-    margin-buttom: 1px;
-    text-align: center;
-}
- 
- h4 , h3 {
-    font-size: 25px;
-    border-bottom: 4px solid skyblue;
- }
-body{
-background-repeat: no-repeat;
-background-size: 10vw 10vh;
-} 
-</style>
-	</div>
-	<!-- / .container -->
-</section>
 
-
-
-<!-- Meta -->
-						<a class="card-meta" href="/actualites/lancement-du-site-internet">
-
-							<!-- Divider -->
-							<hr class="card-meta-divider">
-
-						</a>
-
-					</div>
-
-				</div>
-					</div>
-		<!-- / .row -->
-        <!-- SHAPE -->
-<div class="position-relative">
-	<div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-		<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-	</div>
-</body>
+<script>
+    function downloadPDF() {
+        var isValidForm = document.getElementById('email').value.includes('@');
+        if (isValidForm) {
+            var link = document.createElement('a');
+            link.href = '/template/cv/CV Killian Loiset.pdf';
+            link.download = 'Cv Killian Loiset.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            alert('Veuillez entrer une adresse email valide.');
+        }
+    }
+</script>
 {% endblock %}
 
 {% block javascripts %}
-    {{ encore_entry_script_tags('home') }}
 {% endblock %}

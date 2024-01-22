@@ -58,6 +58,83 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 11
         echo "</head>
+<style>
+
+.container {
+  width: 100%;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.html {width: 100%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.python {width: 70%; background-color: #04AA6D;}
+.c {width: 90%; background-color: #808080;}
+.admin {width: 75%; background-color: #e64d19;}
+.reseau {width: 60%; background-color: #04AA6D;}
+.projet {width: 90%; background-color: #00ff1e;}
+.anglais {width: 80%; background-color: #00ff1e;}
+
+.cas{
+width: 7px;
+margin: auto;
+font-family: 'calibri',sans-serif;
+font-size: 2px;
+border: 4px solid black;
+border-radius: 1px;
+padding:24px;
+}
+.contener{
+    margin-buttom: 1px;
+    text-align: center;
+}
+ h4 , h3 {
+    font-size: 25px;
+    border-bottom: 4px solid skyblue;
+ }
+body{
+background-repeat: no-repeat;
+background-size: 10vw 10vh;
+} 
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=\"email\"], input[type=\"password\"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: yes;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+</style>
 <body>
     <div id=\"wrapper\">
         <!-- Navbar ajoutée ici -->
@@ -93,23 +170,22 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
     </nav>
         <div class=\"main-content\">
             ";
-        // line 46
+        // line 123
         $this->displayBlock('body', $context, $blocks);
-        // line 49
+        // line 126
         echo "        </div>
 
         <footer>
-            <p>© 2023 Killian Loiset</p>
+            <p>© 2024 Killian Loiset</p>
         </footer>
     </div>
 
     ";
-        // line 56
+        // line 133
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 61
+        // line 138
         echo "</body>
-</html>
-";
+</html>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -162,7 +238,7 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
 
     }
 
-    // line 46
+    // line 123
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -172,7 +248,7 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 47
+        // line 124
         echo "                <!-- Le contenu spécifique de chaque page sera inséré ici -->
             ";
         
@@ -183,7 +259,7 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
 
     }
 
-    // line 56
+    // line 133
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -193,7 +269,7 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 57
+        // line 134
         echo "        <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>
         <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js\"></script>
         <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js\"></script>
@@ -213,7 +289,7 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
 
     public function getDebugInfo()
     {
-        return array (  197 => 57,  187 => 56,  176 => 47,  166 => 46,  154 => 9,  151 => 8,  141 => 7,  122 => 6,  110 => 61,  108 => 56,  99 => 49,  97 => 46,  60 => 11,  58 => 7,  54 => 6,  47 => 1,);
+        return array (  273 => 134,  263 => 133,  252 => 124,  242 => 123,  230 => 9,  227 => 8,  217 => 7,  198 => 6,  187 => 138,  185 => 133,  176 => 126,  174 => 123,  60 => 11,  58 => 7,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -229,6 +305,83 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
     <link rel=\"stylesheet\" href=\"{{ asset('stylett.css') }}\">
     {% endblock %}
 </head>
+<style>
+
+.container {
+  width: 100%;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.html {width: 100%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.python {width: 70%; background-color: #04AA6D;}
+.c {width: 90%; background-color: #808080;}
+.admin {width: 75%; background-color: #e64d19;}
+.reseau {width: 60%; background-color: #04AA6D;}
+.projet {width: 90%; background-color: #00ff1e;}
+.anglais {width: 80%; background-color: #00ff1e;}
+
+.cas{
+width: 7px;
+margin: auto;
+font-family: 'calibri',sans-serif;
+font-size: 2px;
+border: 4px solid black;
+border-radius: 1px;
+padding:24px;
+}
+.contener{
+    margin-buttom: 1px;
+    text-align: center;
+}
+ h4 , h3 {
+    font-size: 25px;
+    border-bottom: 4px solid skyblue;
+ }
+body{
+background-repeat: no-repeat;
+background-size: 10vw 10vh;
+} 
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=\"email\"], input[type=\"password\"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: yes;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+</style>
 <body>
     <div id=\"wrapper\">
         <!-- Navbar ajoutée ici -->
@@ -269,7 +422,7 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
         </div>
 
         <footer>
-            <p>© 2023 Killian Loiset</p>
+            <p>© 2024 Killian Loiset</p>
         </footer>
     </div>
 
@@ -279,7 +432,6 @@ class __TwigTemplate_adcda24a79a5fcd016b118f65a23bb5d extends Template
         <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js\"></script>
     {% endblock %}
 </body>
-</html>
-", "base.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\base.html.twig");
+</html>", "base.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\base.html.twig");
     }
 }
