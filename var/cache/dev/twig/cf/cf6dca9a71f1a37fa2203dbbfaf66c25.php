@@ -126,23 +126,55 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
             </p>
         </div>
     </div>
-
-    <div class=\"row justify-content-center\">
-        <div class=\"col-12 col-md-10 col-lg-8\">
-            <form id=\"fakeForm\">
-                <div class=\"form-group\">
-                    <label for=\"email\">Email:</label>
-                    <input type=\"email\" id=\"email\" name=\"email\" required>
-                </div>
-                <div class=\"form-group\">
-                    <label for=\"password\">Mot de passe:</label>
-                    <input type=\"password\" id=\"password\" name=\"password\" required>
-                </div>
-                <button type=\"button\" onclick=\"downloadPDF()\">Télécharger</button>
-            </form>
+    <div class=\"text-center row justify-content-md-center\">
+        <div class=\"hauteur col col-lg-5 card border-primary mx-1 test \">
+            <div class=\"card-header\"><strong>Télécharger mon CV</strong></div>
+            <div class=\"card-body\">
+                <form method=\"post\" action=\"/\" onsubmit=\"return validateEmail()\">
+                    <label for=\"email\">Email</label>
+                    <input type=\"email\" name=\"email\" required>
+                    <br>
+                    <br>
+    
+                    <label for=\"motdepasse\">Mot de passe</label>
+                    <input type=\"password\" id=\"motdepasse\" name=\"motdepasse\" required>
+                    <br>
+                    <br>
+                    <div class=\"d-flex justify-content-center align-items-center\">
+                        <button type=\"submit\" class=\"btn btn-primary\">Télécharger le PDF</button>
+                    </div>
+                </form>
+            </div>
         </div>
+        <script>
+            function validateEmail() {
+                var emailInput = document.querySelector('input[name=\"email\"]');
+                var email = emailInput.value;
+    
+                // Utilisez une expression régulière pour valider l'adresse e-mail
+                var emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+\$/;
+    
+                if (!emailPattern.test(email)) {
+                    alert(\"Veuillez saisir une adresse e-mail valide.\");
+                    return false; // Empêche la soumission du formulaire
+                }
+    
+                // Si la validation est réussie, déclenchez le téléchargement du fichier PDF
+                var link = document.createElement('a');
+                link.href = \"";
+        // line 81
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CV_Killian_Loiset.pdf"), "html", null, true);
+        echo "\";
+                link.download = 'CV_Killian_Loiset.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+    
+                return false; // Empêche la soumission du formulaire
+            }
+        </script>
     </div>
-
+    
     <div class=\"row justify-content-center mt-4\">
         <div class=\"col-12 col-md-10 col-lg-8 text-center\">
             <a href=\"/portfolio\" class=\"btn btn-primary lift\">Retourner au Portfolio<i class=\"fe fe-arrow-right ms-3\"></i></a>
@@ -150,22 +182,6 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
         </div>
     </div>
 </div>
-
-<script>
-    function downloadPDF() {
-        var isValidForm = document.getElementById('email').value.includes('@');
-        if (isValidForm) {
-            var link = document.createElement('a');
-            link.href = '/template/cv/CV Killian Loiset.pdf';
-            link.download = 'Cv Killian Loiset.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } else {
-            alert('Veuillez entrer une adresse email valide.');
-        }
-    }
-</script>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -175,7 +191,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
 
     }
 
-    // line 88
+    // line 101
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -205,7 +221,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
 
     public function getDebugInfo()
     {
-        return array (  179 => 88,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  195 => 101,  166 => 81,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -255,23 +271,52 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
             </p>
         </div>
     </div>
-
-    <div class=\"row justify-content-center\">
-        <div class=\"col-12 col-md-10 col-lg-8\">
-            <form id=\"fakeForm\">
-                <div class=\"form-group\">
-                    <label for=\"email\">Email:</label>
-                    <input type=\"email\" id=\"email\" name=\"email\" required>
-                </div>
-                <div class=\"form-group\">
-                    <label for=\"password\">Mot de passe:</label>
-                    <input type=\"password\" id=\"password\" name=\"password\" required>
-                </div>
-                <button type=\"button\" onclick=\"downloadPDF()\">Télécharger</button>
-            </form>
+    <div class=\"text-center row justify-content-md-center\">
+        <div class=\"hauteur col col-lg-5 card border-primary mx-1 test \">
+            <div class=\"card-header\"><strong>Télécharger mon CV</strong></div>
+            <div class=\"card-body\">
+                <form method=\"post\" action=\"/\" onsubmit=\"return validateEmail()\">
+                    <label for=\"email\">Email</label>
+                    <input type=\"email\" name=\"email\" required>
+                    <br>
+                    <br>
+    
+                    <label for=\"motdepasse\">Mot de passe</label>
+                    <input type=\"password\" id=\"motdepasse\" name=\"motdepasse\" required>
+                    <br>
+                    <br>
+                    <div class=\"d-flex justify-content-center align-items-center\">
+                        <button type=\"submit\" class=\"btn btn-primary\">Télécharger le PDF</button>
+                    </div>
+                </form>
+            </div>
         </div>
+        <script>
+            function validateEmail() {
+                var emailInput = document.querySelector('input[name=\"email\"]');
+                var email = emailInput.value;
+    
+                // Utilisez une expression régulière pour valider l'adresse e-mail
+                var emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+\$/;
+    
+                if (!emailPattern.test(email)) {
+                    alert(\"Veuillez saisir une adresse e-mail valide.\");
+                    return false; // Empêche la soumission du formulaire
+                }
+    
+                // Si la validation est réussie, déclenchez le téléchargement du fichier PDF
+                var link = document.createElement('a');
+                link.href = \"{{ asset('CV_Killian_Loiset.pdf') }}\";
+                link.download = 'CV_Killian_Loiset.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+    
+                return false; // Empêche la soumission du formulaire
+            }
+        </script>
     </div>
-
+    
     <div class=\"row justify-content-center mt-4\">
         <div class=\"col-12 col-md-10 col-lg-8 text-center\">
             <a href=\"/portfolio\" class=\"btn btn-primary lift\">Retourner au Portfolio<i class=\"fe fe-arrow-right ms-3\"></i></a>
@@ -279,22 +324,6 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
         </div>
     </div>
 </div>
-
-<script>
-    function downloadPDF() {
-        var isValidForm = document.getElementById('email').value.includes('@');
-        if (isValidForm) {
-            var link = document.createElement('a');
-            link.href = '/template/cv/CV Killian Loiset.pdf';
-            link.download = 'Cv Killian Loiset.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } else {
-            alert('Veuillez entrer une adresse email valide.');
-        }
-    }
-</script>
 {% endblock %}
 
 {% block javascripts %}

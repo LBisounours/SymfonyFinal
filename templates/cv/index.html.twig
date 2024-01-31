@@ -43,23 +43,52 @@
             </p>
         </div>
     </div>
-
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
-            <form id="fakeForm">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Mot de passe:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="button" onclick="downloadPDF()">Télécharger</button>
-            </form>
+    <div class="text-center row justify-content-md-center">
+        <div class="hauteur col col-lg-5 card border-primary mx-1 test ">
+            <div class="card-header"><strong>Télécharger mon CV</strong></div>
+            <div class="card-body">
+                <form method="post" action="/" onsubmit="return validateEmail()">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                    <br>
+                    <br>
+    
+                    <label for="motdepasse">Mot de passe</label>
+                    <input type="password" id="motdepasse" name="motdepasse" required>
+                    <br>
+                    <br>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-primary">Télécharger le PDF</button>
+                    </div>
+                </form>
+            </div>
         </div>
+        <script>
+            function validateEmail() {
+                var emailInput = document.querySelector('input[name="email"]');
+                var email = emailInput.value;
+    
+                // Utilisez une expression régulière pour valider l'adresse e-mail
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+                if (!emailPattern.test(email)) {
+                    alert("Veuillez saisir une adresse e-mail valide.");
+                    return false; // Empêche la soumission du formulaire
+                }
+    
+                // Si la validation est réussie, déclenchez le téléchargement du fichier PDF
+                var link = document.createElement('a');
+                link.href = "{{ asset('CV_Killian_Loiset.pdf') }}";
+                link.download = 'CV_Killian_Loiset.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+    
+                return false; // Empêche la soumission du formulaire
+            }
+        </script>
     </div>
-
+    
     <div class="row justify-content-center mt-4">
         <div class="col-12 col-md-10 col-lg-8 text-center">
             <a href="/portfolio" class="btn btn-primary lift">Retourner au Portfolio<i class="fe fe-arrow-right ms-3"></i></a>
@@ -67,22 +96,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    function downloadPDF() {
-        var isValidForm = document.getElementById('email').value.includes('@');
-        if (isValidForm) {
-            var link = document.createElement('a');
-            link.href = '/template/cv/CV Killian Loiset.pdf';
-            link.download = 'Cv Killian Loiset.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } else {
-            alert('Veuillez entrer une adresse email valide.');
-        }
-    }
-</script>
 {% endblock %}
 
 {% block javascripts %}
