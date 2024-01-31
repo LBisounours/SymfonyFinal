@@ -86,88 +86,74 @@ class __TwigTemplate_d00c9de1da812032460944169b1940b9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "<body data-aos-easing=\"ease-out-quad\" data-aos-duration=\"700\" data-aos-delay=\"0\">
-\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-\t\t\t\t<h1 class=\"display-2 text-black\">
-\t\t\t\t\t<u>Mon Portfolio :</u>
-\t\t\t\t</h1>
-\t\t\t</div>
-\t\t</div>
-<body>
+        echo "    <section>
+        <div class=\"container\">
+            <div class=\"row justify-content-center\">
+                <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+                    <h1 class=\"display-2 text-black\">
+                        <u>Mon Portfolio :</u>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h1>Mes compétences :</h1>
+    <section>
+        <div class=\"container\">
+            <h1>Mes compétences :</h1>
 
-<p>HTML</p>
-<div class=\"container\">
-  <div class=\"skills html\">100%</div>
-</div>
+            <div class=\"skill-container\">
+                <p>HTML</p>
+                <div class=\"skills html\">100%</div>
 
-<p>CSS</p>
-<div class=\"container\">
-  <div class=\"skills css\">80%</div>
-</div>
+                <p>CSS</p>
+                <div class=\"skills css\">80%</div>
 
-<p>Python</p>
-<div class=\"container\">
-  <div class=\"skills python\">70%</div>
-</div>
+                <p>Python</p>
+                <div class=\"skills python\">70%</div>
 
-<p>Language C</p>
-<div class=\"container\">
-  <div class=\"skills c\">90%</div>
-</div>
+                <p>Language C</p>
+                <div class=\"skills c\">90%</div>
 
-<p>Administration système</p>
-<div class=\"container\">
-  <div class=\"skills admin\">75%</div>
-</div>
+                <p>Administration système</p>
+                <div class=\"skills admin\">75%</div>
 
-<p>Administration réseau</p>
-<div class=\"container\">
-  <div class=\"skills reseau\">60%</div>
-</div>
+                <p>Administration réseau</p>
+                <div class=\"skills reseau\">60%</div>
 
-<p>Gestion de Projet</p>
-<div class=\"container\">
-  <div class=\"skills projet\">90%</div>
-</div>
+                <p>Gestion de Projet</p>
+                <div class=\"skills projet\">90%</div>
 
-<p>Anglais Technique</p>
-<div class=\"container\">
-  <div class=\"skills anglais\">80%</div>
-</div>
-<p> </p>
-<p> </p>
-<a href=\"/\" class=\"btn btn-primary lift\">
-\t\t\t\t\tRetourner à l'acceuil
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-\t\t\t\t\t<a href=\"/cv\" class=\"btn btn-primary lift\">
-\t\t\t\t\tDécouvrir mon CV
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-<div class=\"container\">
-</div>
-<p> </p>
-\t\t\t\t\t\t<a class=\"card-meta\" href=\"\">
-\t\t\t\t\t\t</a>
-</body>
-<a class=\"card-meta\" href=\"\">
-\t\t\t\t\t\t\t<hr class=\"card-meta-divider\">
-\t\t\t\t\t\t</a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t\t</div>  
-\t</div>
-</section>
-<div class=\"position-relative\">
-\t<div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
-\t\t<svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path></svg>
-\t</div>
-</div>
-</body>
+                <p>Anglais Technique</p>
+                <div class=\"skills anglais\">80%</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class=\"container\">
+            <div class=\"row justify-content-center\">
+                <div class=\"col-12\">
+                    <a href=\"/\" class=\"btn btn-primary lift\">
+                        Retourner à l'accueil
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                    <a href=\"/cv\" class=\"btn btn-primary lift\">
+                        Découvrir mon CV
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=\"position-relative\">
+        <div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
+            <svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                <path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path>
+            </svg>
+        </div>
+    </div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -177,7 +163,7 @@ class __TwigTemplate_d00c9de1da812032460944169b1940b9 extends Template
 
     }
 
-    // line 87
+    // line 73
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -207,7 +193,7 @@ class __TwigTemplate_d00c9de1da812032460944169b1940b9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  181 => 87,  89 => 4,  79 => 3,  60 => 2,  37 => 1,);
+        return array (  167 => 73,  89 => 4,  79 => 3,  60 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -215,88 +201,74 @@ class __TwigTemplate_d00c9de1da812032460944169b1940b9 extends Template
         return new Source("{% extends 'base.html.twig' %}
 {% block title %}Mon Portfolio !{% endblock %}
 {% block body %}
-<body data-aos-easing=\"ease-out-quad\" data-aos-duration=\"700\" data-aos-delay=\"0\">
-\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-\t\t\t\t<h1 class=\"display-2 text-black\">
-\t\t\t\t\t<u>Mon Portfolio :</u>
-\t\t\t\t</h1>
-\t\t\t</div>
-\t\t</div>
-<body>
+    <section>
+        <div class=\"container\">
+            <div class=\"row justify-content-center\">
+                <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+                    <h1 class=\"display-2 text-black\">
+                        <u>Mon Portfolio :</u>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h1>Mes compétences :</h1>
+    <section>
+        <div class=\"container\">
+            <h1>Mes compétences :</h1>
 
-<p>HTML</p>
-<div class=\"container\">
-  <div class=\"skills html\">100%</div>
-</div>
+            <div class=\"skill-container\">
+                <p>HTML</p>
+                <div class=\"skills html\">100%</div>
 
-<p>CSS</p>
-<div class=\"container\">
-  <div class=\"skills css\">80%</div>
-</div>
+                <p>CSS</p>
+                <div class=\"skills css\">80%</div>
 
-<p>Python</p>
-<div class=\"container\">
-  <div class=\"skills python\">70%</div>
-</div>
+                <p>Python</p>
+                <div class=\"skills python\">70%</div>
 
-<p>Language C</p>
-<div class=\"container\">
-  <div class=\"skills c\">90%</div>
-</div>
+                <p>Language C</p>
+                <div class=\"skills c\">90%</div>
 
-<p>Administration système</p>
-<div class=\"container\">
-  <div class=\"skills admin\">75%</div>
-</div>
+                <p>Administration système</p>
+                <div class=\"skills admin\">75%</div>
 
-<p>Administration réseau</p>
-<div class=\"container\">
-  <div class=\"skills reseau\">60%</div>
-</div>
+                <p>Administration réseau</p>
+                <div class=\"skills reseau\">60%</div>
 
-<p>Gestion de Projet</p>
-<div class=\"container\">
-  <div class=\"skills projet\">90%</div>
-</div>
+                <p>Gestion de Projet</p>
+                <div class=\"skills projet\">90%</div>
 
-<p>Anglais Technique</p>
-<div class=\"container\">
-  <div class=\"skills anglais\">80%</div>
-</div>
-<p> </p>
-<p> </p>
-<a href=\"/\" class=\"btn btn-primary lift\">
-\t\t\t\t\tRetourner à l'acceuil
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-\t\t\t\t\t<a href=\"/cv\" class=\"btn btn-primary lift\">
-\t\t\t\t\tDécouvrir mon CV
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-<div class=\"container\">
-</div>
-<p> </p>
-\t\t\t\t\t\t<a class=\"card-meta\" href=\"\">
-\t\t\t\t\t\t</a>
-</body>
-<a class=\"card-meta\" href=\"\">
-\t\t\t\t\t\t\t<hr class=\"card-meta-divider\">
-\t\t\t\t\t\t</a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t\t</div>  
-\t</div>
-</section>
-<div class=\"position-relative\">
-\t<div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
-\t\t<svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path></svg>
-\t</div>
-</div>
-</body>
+                <p>Anglais Technique</p>
+                <div class=\"skills anglais\">80%</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class=\"container\">
+            <div class=\"row justify-content-center\">
+                <div class=\"col-12\">
+                    <a href=\"/\" class=\"btn btn-primary lift\">
+                        Retourner à l'accueil
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                    <a href=\"/cv\" class=\"btn btn-primary lift\">
+                        Découvrir mon CV
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=\"position-relative\">
+        <div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
+            <svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                <path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path>
+            </svg>
+        </div>
+    </div>
 {% endblock %}
 {% block javascripts %}
 {% endblock %}", "portfolio/index.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\portfolio\\index.html.twig");

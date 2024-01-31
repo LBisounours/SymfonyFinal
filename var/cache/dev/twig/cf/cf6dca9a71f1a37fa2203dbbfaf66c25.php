@@ -56,7 +56,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
 
     }
 
-    // line 3
+    // line 2
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -75,7 +75,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
 
     }
 
-    // line 5
+    // line 3
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -85,7 +85,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
+        // line 4
         echo "<div class=\"container\">
     <div class=\"row justify-content-center\">
         <div class=\"col-12 col-md-10 col-lg-8 text-center\">
@@ -150,19 +150,15 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
             function validateEmail() {
                 var emailInput = document.querySelector('input[name=\"email\"]');
                 var email = emailInput.value;
-    
-                // Utilisez une expression régulière pour valider l'adresse e-mail
                 var emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+\$/;
     
                 if (!emailPattern.test(email)) {
                     alert(\"Veuillez saisir une adresse e-mail valide.\");
-                    return false; // Empêche la soumission du formulaire
+                    return false;
                 }
-    
-                // Si la validation est réussie, déclenchez le téléchargement du fichier PDF
                 var link = document.createElement('a');
                 link.href = \"";
-        // line 81
+        // line 75
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CV_Killian_Loiset.pdf"), "html", null, true);
         echo "\";
                 link.download = 'CV_Killian_Loiset.pdf';
@@ -170,7 +166,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
                 link.click();
                 document.body.removeChild(link);
     
-                return false; // Empêche la soumission du formulaire
+                return false;
             }
         </script>
     </div>
@@ -191,7 +187,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
 
     }
 
-    // line 101
+    // line 94
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -221,15 +217,13 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
 
     public function getDebugInfo()
     {
-        return array (  195 => 101,  166 => 81,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  191 => 94,  162 => 75,  89 => 4,  79 => 3,  60 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
-
 {% block title %}Mon CV !{% endblock %}
-
 {% block body %}
 <div class=\"container\">
     <div class=\"row justify-content-center\">
@@ -295,16 +289,12 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
             function validateEmail() {
                 var emailInput = document.querySelector('input[name=\"email\"]');
                 var email = emailInput.value;
-    
-                // Utilisez une expression régulière pour valider l'adresse e-mail
                 var emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+\$/;
     
                 if (!emailPattern.test(email)) {
                     alert(\"Veuillez saisir une adresse e-mail valide.\");
-                    return false; // Empêche la soumission du formulaire
+                    return false;
                 }
-    
-                // Si la validation est réussie, déclenchez le téléchargement du fichier PDF
                 var link = document.createElement('a');
                 link.href = \"{{ asset('CV_Killian_Loiset.pdf') }}\";
                 link.download = 'CV_Killian_Loiset.pdf';
@@ -312,7 +302,7 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
                 link.click();
                 document.body.removeChild(link);
     
-                return false; // Empêche la soumission du formulaire
+                return false;
             }
         </script>
     </div>
@@ -325,7 +315,6 @@ class __TwigTemplate_63dad70ea7322654e5d4c1e47c5aea80 extends Template
     </div>
 </div>
 {% endblock %}
-
 {% block javascripts %}
 {% endblock %}", "cv/index.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\cv\\index.html.twig");
     }

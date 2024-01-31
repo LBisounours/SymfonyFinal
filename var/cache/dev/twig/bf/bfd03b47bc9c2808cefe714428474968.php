@@ -86,65 +86,46 @@ class __TwigTemplate_20d103f7becf8aec19712e1b169a0a5e extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "<body data-aos-easing=\"ease-out-quad\" data-aos-duration=\"700\" data-aos-delay=\"0\">
-\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-\t\t\t\t<h1 class=\"display-2 text-black\">
-\t\t\t\t\tMe contacter :
-\t\t\t\t</h1>
-\t\t\t</div>
-\t\t</div>
-\t</div>
-\t</div>
-</section>
-<section class=\"pb-8 pt-7 pb-md-11 pt-md-10\">
-\t<div class=\"container\">
-\t\t<div class=\"row\">
-\t\t\t<div class=\"col-12\">
-\t\t\t\t<h2 class=\"mb-1\">
-\t\t\t\t\tMon numéro de téléphone :
-\t\t\t\t</h2>
-\t\t\t\t<p class=\"mb-5 text-muted\">
-\t\t\t\t\t06-15-07-25-55
-\t\t\t\t</p>
-                <h2 class=\"mb-2\">
-\t\t\t\t\tMon adresse mail :
-\t\t\t\t</h2>
-\t\t\t\t<p class=\"mb-5 text-muted\">
-\t\t\t\t\tloiset.killian@gmail.com
-
-\t\t\t\t<h2 class=\"mb-0\">
-\t\t\t\t\tㅤ
-\t\t\t\t</h2>
-\t\t\t\t<p class=\"mb-5 text-muted\">
-\t\t\t\t\t ㅤ
-\t\t\t\t</p>
-
-\t\t\t</div>
-\t\t</div>
-\t\t\t\t\t\t<a class=\"card-meta\" href=\"/actualites/lancement-du-site-internet\">
-\t\t\t\t\t\t\t<hr class=\"card-meta-divider\">
-\t\t\t\t\t\t</a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t</div>
-\t<a href=\"/cv\" class=\"btn btn-primary lift\">
-\t\t\t\t\tRetourner au CV
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-\t\t\t\t\t<a href=\"/\" class=\"btn btn-primary lift\">
-\t\t\t\t\tRetourner à l'acceuil
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-</section>
-<div class=\"position-relative\">
-\t<div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
-\t\t<svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path></svg>
-\t</div>
-</div>
-</body>
+        echo "    <section class=\"pb-8 pt-7 pb-md-11 pt-md-10\">
+        <div class=\"container\">
+            <div class=\"row justify-content-center\">
+                <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+                    <h1 class=\"display-2 text-black\">Me contacter :</h1>
+                </div>
+            </div>
+            <div class=\"row\">
+                <div class=\"col-12\">
+                    <h2 class=\"mb-1\">Mon numéro de téléphone :</h2>
+                    <p class=\"mb-5 text-muted\">06-15-07-25-55</p>
+                    <h2 class=\"mb-2\">Mon adresse mail :</h2>
+                    <p class=\"mb-5 text-muted\">loiset.killian@gmail.com</p>
+\t\t\t\t\t<h2 class=\"mb-2\">Mon Discord :</h2>
+                    <p class=\"mb-5 text-muted\">https://discord.gg/uv3vXfUETC/p>
+                    <h2 class=\"mb-0\">&nbsp;</h2>
+                    <p class=\"mb-5 text-muted\">&nbsp;</p>
+                </div>
+            </div>
+            <div class=\"row\">
+                <div class=\"col-12\">
+                    <a href=\"/cv\" class=\"btn btn-primary lift\">
+                        Retourner au CV
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                    <a href=\"/\" class=\"btn btn-primary lift\">
+                        Retourner à l'accueil
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class=\"position-relative\">
+        <div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
+            <svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                <path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path>
+            </svg>
+        </div>
+    </div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -154,7 +135,7 @@ class __TwigTemplate_20d103f7becf8aec19712e1b169a0a5e extends Template
 
     }
 
-    // line 64
+    // line 45
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -184,7 +165,7 @@ class __TwigTemplate_20d103f7becf8aec19712e1b169a0a5e extends Template
 
     public function getDebugInfo()
     {
-        return array (  158 => 64,  89 => 4,  79 => 3,  60 => 2,  37 => 1,);
+        return array (  139 => 45,  89 => 4,  79 => 3,  60 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -192,67 +173,49 @@ class __TwigTemplate_20d103f7becf8aec19712e1b169a0a5e extends Template
         return new Source("{% extends 'base.html.twig' %}
 {% block title %}Me contacter !{% endblock %}
 {% block body %}
-<body data-aos-easing=\"ease-out-quad\" data-aos-duration=\"700\" data-aos-delay=\"0\">
-\t<div class=\"container\">
-\t\t<div class=\"row justify-content-center\">
-\t\t\t<div class=\"col-12 col-md-10 col-lg-8 text-center\">
-\t\t\t\t<h1 class=\"display-2 text-black\">
-\t\t\t\t\tMe contacter :
-\t\t\t\t</h1>
-\t\t\t</div>
-\t\t</div>
-\t</div>
-\t</div>
-</section>
-<section class=\"pb-8 pt-7 pb-md-11 pt-md-10\">
-\t<div class=\"container\">
-\t\t<div class=\"row\">
-\t\t\t<div class=\"col-12\">
-\t\t\t\t<h2 class=\"mb-1\">
-\t\t\t\t\tMon numéro de téléphone :
-\t\t\t\t</h2>
-\t\t\t\t<p class=\"mb-5 text-muted\">
-\t\t\t\t\t06-15-07-25-55
-\t\t\t\t</p>
-                <h2 class=\"mb-2\">
-\t\t\t\t\tMon adresse mail :
-\t\t\t\t</h2>
-\t\t\t\t<p class=\"mb-5 text-muted\">
-\t\t\t\t\tloiset.killian@gmail.com
-
-\t\t\t\t<h2 class=\"mb-0\">
-\t\t\t\t\tㅤ
-\t\t\t\t</h2>
-\t\t\t\t<p class=\"mb-5 text-muted\">
-\t\t\t\t\t ㅤ
-\t\t\t\t</p>
-
-\t\t\t</div>
-\t\t</div>
-\t\t\t\t\t\t<a class=\"card-meta\" href=\"/actualites/lancement-du-site-internet\">
-\t\t\t\t\t\t\t<hr class=\"card-meta-divider\">
-\t\t\t\t\t\t</a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t</div>
-\t<a href=\"/cv\" class=\"btn btn-primary lift\">
-\t\t\t\t\tRetourner au CV
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-\t\t\t\t\t<a href=\"/\" class=\"btn btn-primary lift\">
-\t\t\t\t\tRetourner à l'acceuil
-\t\t\t\t\t<i class=\"fe fe-arrow-right ms-3\"></i>
-\t\t\t\t</a>
-</section>
-<div class=\"position-relative\">
-\t<div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
-\t\t<svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path></svg>
-\t</div>
-</div>
-</body>
+    <section class=\"pb-8 pt-7 pb-md-11 pt-md-10\">
+        <div class=\"container\">
+            <div class=\"row justify-content-center\">
+                <div class=\"col-12 col-md-10 col-lg-8 text-center\">
+                    <h1 class=\"display-2 text-black\">Me contacter :</h1>
+                </div>
+            </div>
+            <div class=\"row\">
+                <div class=\"col-12\">
+                    <h2 class=\"mb-1\">Mon numéro de téléphone :</h2>
+                    <p class=\"mb-5 text-muted\">06-15-07-25-55</p>
+                    <h2 class=\"mb-2\">Mon adresse mail :</h2>
+                    <p class=\"mb-5 text-muted\">loiset.killian@gmail.com</p>
+\t\t\t\t\t<h2 class=\"mb-2\">Mon Discord :</h2>
+                    <p class=\"mb-5 text-muted\">https://discord.gg/uv3vXfUETC/p>
+                    <h2 class=\"mb-0\">&nbsp;</h2>
+                    <p class=\"mb-5 text-muted\">&nbsp;</p>
+                </div>
+            </div>
+            <div class=\"row\">
+                <div class=\"col-12\">
+                    <a href=\"/cv\" class=\"btn btn-primary lift\">
+                        Retourner au CV
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                    <a href=\"/\" class=\"btn btn-primary lift\">
+                        Retourner à l'accueil
+                        <i class=\"fe fe-arrow-right ms-3\"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class=\"position-relative\">
+        <div class=\"shape shape-bottom shape-fluid-x svg-shim text-dark\">
+            <svg viewBox=\"0 0 2880 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                <path d=\"M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z\" fill=\"currentColor\"></path>
+            </svg>
+        </div>
+    </div>
 {% endblock %}
 {% block javascripts %}
-{% endblock %}", "contact/index.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\contact\\index.html.twig");
+{% endblock %}
+", "contact/index.html.twig", "C:\\Users\\kikiX\\Symfony\\SymfonyFinal\\templates\\contact\\index.html.twig");
     }
 }

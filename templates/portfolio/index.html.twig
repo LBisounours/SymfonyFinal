@@ -1,88 +1,74 @@
 {% extends 'base.html.twig' %}
 {% block title %}Mon Portfolio !{% endblock %}
 {% block body %}
-<body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-10 col-lg-8 text-center">
-				<h1 class="display-2 text-black">
-					<u>Mon Portfolio :</u>
-				</h1>
-			</div>
-		</div>
-<body>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+                    <h1 class="display-2 text-black">
+                        <u>Mon Portfolio :</u>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h1>Mes compétences :</h1>
+    <section>
+        <div class="container">
+            <h1>Mes compétences :</h1>
 
-<p>HTML</p>
-<div class="container">
-  <div class="skills html">100%</div>
-</div>
+            <div class="skill-container">
+                <p>HTML</p>
+                <div class="skills html">100%</div>
 
-<p>CSS</p>
-<div class="container">
-  <div class="skills css">80%</div>
-</div>
+                <p>CSS</p>
+                <div class="skills css">80%</div>
 
-<p>Python</p>
-<div class="container">
-  <div class="skills python">70%</div>
-</div>
+                <p>Python</p>
+                <div class="skills python">70%</div>
 
-<p>Language C</p>
-<div class="container">
-  <div class="skills c">90%</div>
-</div>
+                <p>Language C</p>
+                <div class="skills c">90%</div>
 
-<p>Administration système</p>
-<div class="container">
-  <div class="skills admin">75%</div>
-</div>
+                <p>Administration système</p>
+                <div class="skills admin">75%</div>
 
-<p>Administration réseau</p>
-<div class="container">
-  <div class="skills reseau">60%</div>
-</div>
+                <p>Administration réseau</p>
+                <div class="skills reseau">60%</div>
 
-<p>Gestion de Projet</p>
-<div class="container">
-  <div class="skills projet">90%</div>
-</div>
+                <p>Gestion de Projet</p>
+                <div class="skills projet">90%</div>
 
-<p>Anglais Technique</p>
-<div class="container">
-  <div class="skills anglais">80%</div>
-</div>
-<p> </p>
-<p> </p>
-<a href="/" class="btn btn-primary lift">
-					Retourner à l'acceuil
-					<i class="fe fe-arrow-right ms-3"></i>
-				</a>
-					<a href="/cv" class="btn btn-primary lift">
-					Découvrir mon CV
-					<i class="fe fe-arrow-right ms-3"></i>
-				</a>
-<div class="container">
-</div>
-<p> </p>
-						<a class="card-meta" href="">
-						</a>
-</body>
-<a class="card-meta" href="">
-							<hr class="card-meta-divider">
-						</a>
-					</div>
-				</div>
-					</div>  
-	</div>
-</section>
-<div class="position-relative">
-	<div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-		<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
-	</div>
-</div>
-</body>
+                <p>Anglais Technique</p>
+                <div class="skills anglais">80%</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <a href="/" class="btn btn-primary lift">
+                        Retourner à l'accueil
+                        <i class="fe fe-arrow-right ms-3"></i>
+                    </a>
+                    <a href="/cv" class="btn btn-primary lift">
+                        Découvrir mon CV
+                        <i class="fe fe-arrow-right ms-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="position-relative">
+        <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
 {% endblock %}
 {% block javascripts %}
 {% endblock %}
