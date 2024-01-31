@@ -67,16 +67,12 @@
             function validateEmail() {
                 var emailInput = document.querySelector('input[name="email"]');
                 var email = emailInput.value;
-    
-                // Utilisez une expression régulière pour valider l'adresse e-mail
                 var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
                 if (!emailPattern.test(email)) {
                     alert("Veuillez saisir une adresse e-mail valide.");
-                    return false; // Empêche la soumission du formulaire
+                    return false;
                 }
-    
-                // Si la validation est réussie, déclenchez le téléchargement du fichier PDF
                 var link = document.createElement('a');
                 link.href = "{{ asset('CV_Killian_Loiset.pdf') }}";
                 link.download = 'CV_Killian_Loiset.pdf';
@@ -84,7 +80,7 @@
                 link.click();
                 document.body.removeChild(link);
     
-                return false; // Empêche la soumission du formulaire
+                return false;
             }
         </script>
     </div>
